@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "title": "Mouse",
+    "description": "Optico",
+    "code": "MOU-001",
+    "price": 500,
+    "status": true,
+    "stock": 15,
+    "category": "perifericos",
+    "thumbnails": ["mouse.png"]
+  },
+  {
+    "id": "2",
+    "title": "Teclado",
+    "description": "mecanido",
+    "code": "TEC-001",
+    "price": 750,
+    "status": true,
+    "stock": 30,
+    "category": "perifericos",
+    "thumbnails": ["teclado.png"]
+  },
+  {
+    "id": "3",
+    "title": "Auriculares",
+    "description": "Auriculares gamer",
+    "code": "AUR-001",
+    "price": 1000,
+    "status": true,
+    "stock": 12,
+    "category": "perifericos",
+    "thumbnails": ["auriculares.png"]
+  }
+]
