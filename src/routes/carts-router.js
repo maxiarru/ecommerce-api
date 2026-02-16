@@ -3,7 +3,7 @@ import { cartManager } from "../managers/CartManager.js";
 import { productManager } from "../managers/ProductManager.js";
 const router = Router();
 
-// POST /api/carts -> crea carrito
+// POST /api/carts  - creo el carrito
 router.post("/", async (req, res) => {
   try {
     const newCart = await cartManager.create();
@@ -13,6 +13,7 @@ router.post("/", async (req, res) => {
   }
 });
 
+// get /api/carts/:cid  - consulto carrito
 router.get("/:cid", async (req, res) => {
   try {
     const { cid } = req.params;
@@ -29,6 +30,7 @@ router.get("/:cid", async (req, res) => {
   }
 });
 
+// POST /api/carts/:cid/product/:pid  - agrego prod al carrito
 router.post("/:cid/product/:pid", async (req, res) => {
   try {
     const { cid, pid } = req.params;
